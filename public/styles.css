@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  #game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 5px; /* Adds a gap between the cells */
+    margin-right: 20px;
+  }
+  
+  .grid-cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+  }
+  
+  .player1 {
+    background-color: blue;
+  }
+  
+  .player2 {
+    background-color: red;
+  }
+  
+  .base {
+    background-color: green;
+  }
+  
+  #controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #reset-button {
+    background-color: red;
+    color: white;
+    border: none;
+  }
+  
+  #reset-button:hover {
+    background-color: darkred;
+  }
+  
+  #status {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .obstacle {
+    background-color: brown; /* Puedes elegir el color que prefieras */
+  }

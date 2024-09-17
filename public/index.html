@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplayer Strategy Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Multiplayer Strategy Game</h1>
+
+  <div id="game-container">
+    <!-- Tablero de juego -->
+    <div id="game-board"></div>
+
+    <!-- Controles de movimiento -->
+    <div id="controls">
+      <button onclick="movePlayer('up')">Up</button>
+      <button onclick="movePlayer('left')">Left</button>
+      <button onclick="movePlayer('right')">Right</button>
+      <button onclick="movePlayer('down')">Down</button>
+      <button id="reset-button" onclick="resetGame()">Reset Game</button>
+    </div>
+  </div>
+
+  <!-- Estado del juego -->
+  <div id="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
